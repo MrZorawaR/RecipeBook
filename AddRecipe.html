@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Recipe</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="AddRecipe.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <img src="images/dark logo.png">
+	  <h1>Add New Recipes</h1>
+    </nav>
+    <div class="container">
+	   <!-- Add recipes form -->
+       <div class="left-column">
+        <h3>Add Recipe</h3>
+        <form>
+          <label for="recipe-name">Name:</label>
+          <input type="text" id="recipe-name" required>
+          <br>
+          <label for="recipe-ingredients">Ingredients:</label>
+          <textarea id="recipe-ingredients" rows="5" required></textarea>
+          <br>
+          <label for="recipe-method">Method:</label>
+          <textarea id="recipe-method" rows="5" required></textarea>
+          <br>
+          <button type="submit">Add Recipe</button>
+        </form>
+      </div>
+	  <!-- Search bar/view recipes list -->
+	  <div class="right-column">
+		<div id="search-section">
+          <h3>Recipes List</h3>
+          <label for="search-box">Search:</label>
+          <input type="text" id="search-box">
+        </div>
+        <div id="recipe-list"></div>
+		<div id="no-recipes">You have no recipes.</div>
+      </div>
+    </div>
+    <script src="AddRecipe.js"></script>
+  </body>
+</html>
